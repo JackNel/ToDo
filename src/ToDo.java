@@ -18,7 +18,7 @@ public class ToDo {
     }
     public static void main(String[] args) {
         ArrayList<ToDoItem> todos = new ArrayList();
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);1
 
         while (true) {
             printTodos(todos);
