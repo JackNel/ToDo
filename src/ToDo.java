@@ -12,13 +12,14 @@ public class ToDo {
             if (todo.isDone) {
                 checkBox = "[x]";
             }
-            System.out.println(todoNum + ". " + checkBox + " " + todo.text);
+            String line = String.format("%d. %s %s", todoNum, checkBox, todo.text);
+            System.out.println(line);
             todoNum++;
         }
     }
     public static void main(String[] args) {
         ArrayList<ToDoItem> todos = new ArrayList();
-        Scanner scanner = new Scanner(System.in);1
+        Scanner scanner = new Scanner(System.in);
 
         while (true) {
             printTodos(todos);
